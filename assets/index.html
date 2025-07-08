@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><link rel="stylesheet" href="style.css">
+
+
+<body>
+
+    <header>
+        <img src="/assets/logo.png" alt="logo NLW">
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2 class="tittle">Assistente de Meta</h2>
+                <p>Pergunte sobe estratégias, build e dicas pra seus jogos</p>
+
+                <form id="form" >
+                    <input type="password" required placeholder="Informe a API KEY do Gemini" name="senha" id="senha">
+
+                    <select name="jogo" id="jogo" required>
+                        <option value="">Selecione um jogo</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">League Of Legends</option>
+                        <option value="cs">CS:GO</option>
+                        <input type="text" name="ex" id="ex" placeholder="Ex: Melhor build para LOL">
+                      <button id="perguntar">Perguntar</button>
+                    </select>
+
+                </form>
+
+                <div id="res">
+
+                    <div class="response">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+
+<script src="scipt.js"></script>
+
+</html>
