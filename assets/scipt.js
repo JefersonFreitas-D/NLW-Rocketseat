@@ -1,3 +1,6 @@
+
+/*AIzaSyBeiGt9XIQ6J7i4p7f7teraN4BfAQ-zOys*/
+
 const form = document.getElementById('form')
 const api = document.getElementById('senha')
 const jogo = document.getElementById('jogo')
