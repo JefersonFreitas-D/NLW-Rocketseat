@@ -110,10 +110,50 @@ button:hover{
     box-shadow: 0 5px 1rem rgb(255, 248, 107, 0.2);
 }
 
+button:disabled {
+    transition: none;
+    transform: translate(0);
+    box-shadow: none;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.756);
+}
+
+.load {
+    animation: pulse 1s infinite;
+}
+
+#res{
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43e7ad;
+    
+}
+
+#res ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+#res p {
+    color: rgb(255, 255, 255,);
+}
+
+.hidden{
+    display: none;
+}
+
 @keyframes aparecer {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+    
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
     }
     
 }
